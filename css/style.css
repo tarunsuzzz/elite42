@@ -3,27 +3,32 @@
   padding: 0;
 }
 
-ul {
+ul.parent {
   list-style: none;
-  background-color: grey;
-}
-
-ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: grey;
 }
-
-ul li {
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
   padding: 10px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: white;
   text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
 }
-
-ul li a:hover {
+ul.parent li a:hover {
   color: red;
-} /*# sourceMappingURL=style.css.map */
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  background-color: grey;
+  width: 150pc;
+  top: 24px;
+}
+ul.parent li:hover ul {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

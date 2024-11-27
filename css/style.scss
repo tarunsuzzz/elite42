@@ -1,26 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul {
+*{
+    margin:0;
+    padding:0;
+}
+ul.parent
+{
     list-style: none;
-    background-color:grey;
-  }
-  
-  ul {
     display: flex;
-    justify-content: flex-end;
-    background-color: grey;
-  }
-  ul li {
-    padding: 10px;
-  }
-  ul li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-  }
-  ul li a:hover {
-    color: red;
-  }/*# sourceMappingURL=style.css.map */
+    justify-content: center;
+    background-color:grey;
+    li{
+        position: relative;
+        a{
+            padding:10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            &:hover{
+                color:red;
+            }
+        }
+        ul{
+            position: absolute;
+            display: none;
+            background-color: grey;
+            width:150pc;
+            top:24px;
+        }
+        &:hover{
+            ul{
+                display: block;
+            }
+        }
+    }
+}

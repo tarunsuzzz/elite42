@@ -6,7 +6,7 @@
 ul.parent {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: grey;
 }
 ul.parent li {
@@ -31,4 +31,24 @@ ul.parent li ul {
 }
 ul.parent li:hover ul {
   display: block;
+}
+
+.header {
+  background-image: url("../images/header.prg");
+}
+
+.content .products li {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: grey;
+}
+.content .products li button {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  border: none;
+  background-color: grey;
+  color: #fff;
+  height: 24px;
 }/*# sourceMappingURL=style.css.map */

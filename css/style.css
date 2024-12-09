@@ -1,83 +1,198 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-ul.parent {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px;
-  background-color: grey;
-}
-ul.parent li {
-  position: relative;
-}
-ul.parent li a {
-  padding: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
-}
-ul.parent li a:hover {
-  color: red;
-}
-ul.parent li ul {
-  position: absolute;
-  display: none;
-  background-color: grey;
-  padding: 5px;
-  top: 24px;
-}
-ul.parent li:hover ul {
-  display: block;
-}
-
 .header {
-  background-image: url("../images/download (1).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 65px;
   width: 100%;
-  height: 200px;
+  background-color: #a8a78a;
 }
-
-.content {
-  padding: 10px;
-}
-.content .products {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.content .products li {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  background-color: #F0F0F0;
-}
-.content .products li button {
+.header .p_head {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: greenyellow;
-  height: 20px;
+  font-size: 22px;
+  left: 465px;
+  top: 18px;
 }
-.content .products li button:hover {
-  color: red;
+.header #in {
+  position: absolute;
+  left: 700px;
+  top: 14px;
+  height: 32px;
+  width: 400px;
+  border: 2px solid orange;
+  background: transparent;
+  border-radius: 5px;
+}
+.header ::-moz-placeholder {
+  color: black;
+  position: absolute;
+  left: 10px;
+}
+.header ::placeholder {
+  color: black;
+  position: absolute;
+  left: 10px;
+}
+.header .button {
+  color: white;
+  position: absolute;
+  height: 32px;
+  width: 200px;
+  top: 14px;
+  left: 1130px;
+  background-color: orange;
+  border: 1px solid orange;
   cursor: pointer;
 }
-.content .products li img {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  bottom: 50px;
-  left: 50px;
+
+.body {
+  position: relative;
+  top: 20px;
+  left: 380px;
+  height: 800px;
+  width: 1100px;
+  background-color: white;
 }
-.content .products li p {
-  text-align: center;
-  color: black;
-  font: bold;
+.body .p {
+  position: absolute;
+  color: orange;
+  top: 30px;
+  font-size: 35px;
+}
+.body .par {
+  position: absolute;
+  top: 80px;
+}
+.body .b1 {
+  position: absolute;
+  top: 80px;
+  left: 808px;
+  height: 40px;
+  width: 70px;
+  border: 2px solid orange;
+  background: transparent;
+  cursor: pointer;
+}
+.body .b2 {
+  position: absolute;
+  top: 80px;
+  left: 882px;
+  height: 40px;
+  width: 70px;
+  border: 2px solid orange;
+  background: transparent;
+  cursor: pointer;
+}
+.body .b3 {
+  position: absolute;
+  top: 80px;
+  left: 956px;
+  height: 40px;
+  width: 70px;
+  border: 2px solid orange;
+  background: transparent;
+  cursor: pointer;
+}
+.body .b4 {
+  position: absolute;
+  top: 80px;
+  left: 1030px;
+  height: 40px;
+  width: 70px;
+  border: 2px solid orange;
+  background: transparent;
+  cursor: pointer;
+}
+.body .images {
+  padding: 10px;
+}
+.body .images .image {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.body .images .image li {
+  height: 255px;
+  width: 225x;
+  position: relative;
+  top: 160px;
+}
+.body .images .image li img {
+  position: relative;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+}
+.body .images .image li .dis {
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
+}
+.body .b5 {
+  position: absolute;
+  bottom: 24px;
+  left: 500px;
+  height: 40px;
+  width: 150px;
+  border: 2px solid orange;
+  background: transparent;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: #a8a78a;
+  position: relative;
+  top: 10px;
+}
+.footer .image img {
+  position: absolute;
+  height: 500px;
+  width: 50%;
+}
+.footer .dis {
+  position: relative;
+}
+.footer .dis #p1 {
+  position: absolute;
+  font-size: 30px;
+  padding-top: 80px;
+  left: 1065px;
+}
+.footer .dis #b0 {
+  position: absolute;
+  top: 150px;
+  left: 1065px;
+  height: 40px;
+  width: 150px;
+  color: orange;
+  border: 2px solid orange;
+  background: transparent;
+  cursor: pointer;
+}
+.footer .dis #b0 {
+  font-size: 25px;
+}
+.footer .dis #p2 {
+  position: absolute;
+  top: 220px;
+  left: 56%;
+  right: 20px;
+}
+.footer .dis #b1 {
+  position: relative;
+  top: 420px;
+  left: 1065px;
+  height: 40px;
+  width: 150px;
+  background: transparent;
+  border: 2px solid #ccae39;
+}
+.footer .dis #b1 {
+  font-size:  20px;
 }/*# sourceMappingURL=style.css.map */
